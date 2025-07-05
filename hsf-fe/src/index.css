@@ -1,0 +1,141 @@
+:root {
+  /* Light Theme */
+  --background-color: #ffffff;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --primary-color: #3f51b5;
+  --primary-color-rgb: 63, 81, 181; /* RGB values for primary color */
+  --secondary-color: #00bcd4;
+  --secondary-color-rgb: 0, 188, 212; /* RGB values for secondary color */
+  --accent-color: #ff4081;
+  --accent-color-rgb: 255, 64, 129; /* RGB values for accent color */
+  --card-background: #ffffff;
+  --border-color: #e0e0e0;
+  --header-background: #ffffff;
+  --footer-background: #f5f5f5;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --dark-color: #303f9f;
+  --dark-color-rgb: 48, 63, 159; /* RGB values for dark color */
+  --success-color: #4caf50;
+  --success-color-rgb: 76, 175, 80; /* RGB values for success color */
+  --warning-color: #ff9800;
+  --warning-color-rgb: 255, 152, 0; /* RGB values for warning color */
+  --error-color: #f44336;
+  --error-color-rgb: 244, 67, 54; /* RGB values for error color */
+}
+
+[data-theme='dark'] {
+  --background-color: #121212;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --primary-color: #7986cb;
+  --primary-color-rgb: 121, 134, 203; /* RGB values for primary color in dark mode */
+  --secondary-color: #4dd0e1;
+  --secondary-color-rgb: 77, 208, 225; /* RGB values for secondary color in dark mode */
+  --accent-color: #ff80ab;
+  --accent-color-rgb: 255, 128, 171; /* RGB values for accent color in dark mode */
+  --card-background: #1e1e1e;
+  --border-color: #333333;
+  --header-background: #1a1a1a;
+  --footer-background: #1a1a1a;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --dark-color: #5c6bc0;
+  --dark-color-rgb: 92, 107, 192; /* RGB values for dark color in dark mode */
+  --success-color: #66bb6a;
+  --success-color-rgb: 102, 187, 106; /* RGB values for success color in dark mode */
+  --warning-color: #ffa726;
+  --warning-color-rgb: 255, 167, 38; /* RGB values for warning color in dark mode */
+  --error-color: #ef5350;
+  --error-color-rgb: 239, 83, 80; /* RGB values for error color in dark mode */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--dark-color);
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/* AOS animation custom styles */
+[data-aos] {
+  pointer-events: none;
+}
+[data-aos].aos-animate {
+  pointer-events: auto;
+}
+
+/* Swiper custom styles */
+.swiper-pagination-bullet-active {
+  background-color: var(--primary-color) !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--primary-color) !important;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.mt-5 { margin-top: 3rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+.mb-5 { margin-bottom: 3rem; }
+
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+.p-4 { padding: 2rem; }
+.p-5 { padding: 3rem; } 

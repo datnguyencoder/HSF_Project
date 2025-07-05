@@ -1,0 +1,242 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  min-height: calc(100vh - 250px);
+  background-color: var(--background-color);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 450px;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-header h2 {
+  color: var(--text-primary);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.login-header p {
+  color: var(--text-secondary);
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.login-form {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  background-color: var(--card-background);
+  color: var(--text-primary);
+}
+
+.form-group input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+.password-toggle:hover {
+  color: var(--primary-color);
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+}
+
+.remember-me input {
+  margin-right: 8px;
+}
+
+.forgot-password {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: var(--dark-color);
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--border-color);
+  z-index: 1;
+}
+
+.divider span {
+  background-color: var(--card-background);
+  padding: 0 15px;
+  position: relative;
+  z-index: 2;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-background);
+  transition: all 0.3s;
+  flex: 1;
+}
+
+.social-button:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-button.google {
+  color: #4285F4;
+  width: 100%;
+}
+
+.social-button.facebook {
+  color: #1877F2;
+}
+
+.social-button.large {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  max-width: none;
+}
+
+.signup-prompt {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.signup-prompt a {
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.signup-prompt a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .login-card {
+    padding: 30px 20px;
+  }
+  
+  .login-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .social-login {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-button {
+    max-width: 100%;
+    width: 100%;
+  }
+} 
